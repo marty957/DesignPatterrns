@@ -1,5 +1,6 @@
 package com.example.DesignPatterns;
 
+import com.example.DesignPatterns.chain.*;
 import com.example.DesignPatterns.composite.Autore;
 import com.example.DesignPatterns.composite.Libro;
 import com.example.DesignPatterns.composite.Pagina;
@@ -39,6 +40,14 @@ public class DesignPatternsApplication {
 		libro1.addSezioni(cap2);
 		System.out.println(libro1.getCapitoli());
 
+
+		UfficialeMarina u1= new Tenente();
+		UfficialeMarina u2= new Capitano(u1);
+		UfficialeMarina u3= new Maggiore(u2);
+		UfficialeMarina u4= new Colonnello(u3);
+		UfficialeMarina u5= new Generale(u4);
+
+u5.salarioDistrubuzione(4000);
 
 
 
