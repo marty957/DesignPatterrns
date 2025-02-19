@@ -48,7 +48,13 @@ private List<Sezioni> capitoli;
 
     public Libro() {
     }
-
+public int numPagineLibro(){
+        int numeroTot=0;
+        for(Sezioni cap:capitoli){
+           numeroTot+=cap.numeroP();
+        }
+        return numeroTot;
+}
     @Override
     public String toString() {
         return "Libro{" +

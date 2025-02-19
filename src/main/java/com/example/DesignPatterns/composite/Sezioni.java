@@ -20,6 +20,14 @@ public class Sezioni {
 public void addPagine(Pagina p){
        capitoli.add(p);
 }
+
+public int numeroP(){
+        int num=0;
+        for(Pagina p: capitoli){
+           num+= p.getNumeroPagina();
+        }
+        return num;
+}
     @Override
     public String toString() {
         return "Sezioni{" +
