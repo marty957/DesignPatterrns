@@ -47,7 +47,7 @@ public class DesignPatternsApplication {
 		UfficialeMarina u4= new Colonnello(u3);
 		UfficialeMarina u5= new Generale(u4);
 
-u5.salarioDistrubuzione(4000);
+         u5.salarioDistrubuzione(4000);
 
 
 

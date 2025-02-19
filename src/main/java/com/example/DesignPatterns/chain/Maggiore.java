@@ -12,6 +12,6 @@ public class Maggiore extends UfficialeMarina{
 
     @Override
     public boolean salary(int salario) {
-        return salario==3000;
+        return salario<=3000;
     }
 }

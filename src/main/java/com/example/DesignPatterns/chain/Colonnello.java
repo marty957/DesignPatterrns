@@ -12,6 +12,6 @@ public class Colonnello extends UfficialeMarina{
 
     @Override
     public boolean salary(int salario) {
-        return salario==4000;
+        return salario<=4000;
     }
 }

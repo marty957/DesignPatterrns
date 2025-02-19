@@ -21,7 +21,7 @@ package com.example.DesignPatterns.chain;
      public void salarioDistrubuzione(int salario){
         if(salary(salario)){
             System.out.println("con il salario segnalato la posizione di riferimento è "
-                    + getUfficialDiRiferimento());
+                    + this.getClass().getSimpleName());
         } else if(ufficialDiRiferimento != null){
             ufficialDiRiferimento.salarioDistrubuzione(salario);
         }else{

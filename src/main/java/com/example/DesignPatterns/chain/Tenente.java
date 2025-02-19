@@ -15,6 +15,6 @@ public class Tenente extends UfficialeMarina {
 
     @Override
     public boolean salary(int salario) {
-        return (salario==1000);
+        return (salario<=1000);
     }
 }
